@@ -1,8 +1,10 @@
 package com.vargas.store;
 
-import org.springframework.core.annotation.Order;
+
 
 public class OrderService {
+
+
     private PaymentService paymentService;
 
     public OrderService(PaymentService paymentService) {
@@ -13,4 +15,13 @@ public class OrderService {
 
         paymentService.processPayment(100.0);
     }
+
+    public void setPaymentService(PaymentService paymentService) {
+        this.paymentService = paymentService;
+    }
+
+    
+
+
+
 }
