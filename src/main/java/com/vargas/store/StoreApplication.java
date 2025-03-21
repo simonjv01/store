@@ -10,6 +10,7 @@ public class StoreApplication {
 
 //        SpringApplication.run(StoreApplication.class, args);
         var orderService = new OrderService(new PayPalPaymentService());
+        
         orderService.placeOrder();
     }
 
